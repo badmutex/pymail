@@ -1,0 +1,20 @@
+
+* Description
+  This is a commandline utility for sending emails (a la mail/sendmail).
+  The key is to provide a simple interface, allowing html and attachments.
+
+* Example
+#+BEGIN_SRC
+$ echo 'Hello world!' | pymail -s subject -t first@person.org second@person.com -f origin@bot.com -A attached.dat attachme2.dat
+#+END_SRC
+
+* Dependencies
+** [[http://pypi.python.org/pypi/mailer][Mailer]]
+
+* Installation
+#+BEGIN_SRC
+$ python setup.py install --prefix path/to/prefix
+#+END_SRC
+
+* License
+  See COPYING
